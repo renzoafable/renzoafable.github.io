@@ -1,0 +1,35 @@
+.TechWrapper {
+  background-color: #0a7286;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.TechWrapper:last-of-type {
+  margin-bottom: 0;
+}
+
+.TechLabel {
+  background-color: #0493b0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  width: 35%;
+}
+
+.TechContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 65%;
+}
+
+.TechContent span {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 8px;
+}

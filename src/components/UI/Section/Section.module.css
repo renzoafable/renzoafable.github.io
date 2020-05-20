@@ -1,0 +1,22 @@
+.Section {
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+.Heading {
+  color: #5e5e5e;
+  font-size: 230%;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 4px;
+}
+
+.Heading:after {
+  background-color: var(--main-red-color);
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 20px auto 75px auto;
+  width: 100px;
+}
