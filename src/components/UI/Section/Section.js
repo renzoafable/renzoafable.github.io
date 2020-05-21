@@ -9,10 +9,8 @@ const Section = (props) => {
   };
 
   return (
-    <section className={classes.Section} style={style}>
-      <h2 id={props.id} className={classes.Heading}>
-        {props.heading}
-      </h2>
+    <section id={props.id} className={classes.Section} style={style}>
+      <h2 className={classes.Heading}>{props.heading}</h2>
       <Container>{props.children}</Container>
     </section>
   );

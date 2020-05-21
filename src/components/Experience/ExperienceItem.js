@@ -25,6 +25,9 @@ const ExperienceItem = (props) => {
         {props.description.map((item) => (
           <li>{item}</li>
         ))}
+        <li className={classes.Stack}>
+          <em>Tech stack</em>: {props.stack.join(', ')}
+        </li>
       </ul>
     </div>
   );

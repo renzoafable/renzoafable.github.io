@@ -31,7 +31,7 @@ const Navigation = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className={classes.LinkContainer}>
-              <Nav.Link className={classes.Link} href='#'>
+              <Nav.Link className={classes.Link} href='#projects'>
                 Projects
               </Nav.Link>
             </Nav.Item>

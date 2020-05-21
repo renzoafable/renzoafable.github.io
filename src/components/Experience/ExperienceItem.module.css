@@ -35,3 +35,7 @@
 .Details {
   padding: 0 1rem;
 }
+
+.Stack em {
+  font-weight: 700;
+}
