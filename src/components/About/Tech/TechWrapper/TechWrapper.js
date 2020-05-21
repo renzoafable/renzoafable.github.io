@@ -7,8 +7,8 @@ const TechWrapper = (props) => {
     <div className={classes.TechWrapper}>
       <div className={classes.TechLabel}>{props.label}</div>
       <div className={classes.TechContent}>
-        {props.items.map((tech) => (
-          <span>{tech}</span>
+        {props.items.map((tech, index) => (
+          <span key={index}>{tech}</span>
         ))}
       </div>
     </div>

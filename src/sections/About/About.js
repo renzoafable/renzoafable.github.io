@@ -37,7 +37,7 @@ const About = () => {
       },
       {
         title: 'Dynamic',
-        description: 'I like making website come to life.',
+        description: 'I like making websites come to life.',
         icon: <IosJet {...iconStyle} />,
       },
     ],
