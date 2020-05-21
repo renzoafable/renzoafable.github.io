@@ -21,12 +21,12 @@ const Navigation = () => {
         <Navbar.Collapse id='header-nav'>
           <Nav className='text-center ml-auto'>
             <Nav.Item className={classes.LinkContainer}>
-              <Nav.Link className={classes.Link} href='#'>
+              <Nav.Link className={classes.Link} href='#about'>
                 About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className={classes.LinkContainer}>
-              <Nav.Link className={classes.Link} href='#'>
+              <Nav.Link className={classes.Link} href='#experience'>
                 Experience
               </Nav.Link>
             </Nav.Item>
