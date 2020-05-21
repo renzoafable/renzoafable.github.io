@@ -46,7 +46,7 @@ const About = () => {
     companyUrl: 'https://www.kalibrr.com/',
     companyLocation: 'Makati City, Philippines',
     description:
-      'I have a serious passion for web development. I primarily use JavaScript but I am also etremely open to learning new things.',
+      'I have a serious passion for web development. I primarily use JavaScript but I am also more than willing to learning new things.',
     tech: [
       {
         label: 'languages',
