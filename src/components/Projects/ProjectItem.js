@@ -27,14 +27,16 @@ const ProjectItem = (props) => {
             <div className='d-flex justify-content-between align-items-center pb-2'>
               <MdFolderOpen color='#5e5e5e' />
               {links.length ? (
-                <div className={classes.Links}>{links}</div>
+                <div className={classes.Links}>
+                  {links.map((link, index) =>
+                    React.cloneElement(link, { key: index })
+                  )}
+                </div>
               ) : null}
             </div>
             <h3 className={classes.Title}>{props.name}</h3>
           </Card.Title>
-          <Card.Text>
-            <p>{props.description}</p>
-          </Card.Text>
+          <Card.Text>{props.description}</Card.Text>
 
           <Card.Footer className='bg-transparent mt-auto p-0'>
             {props.stack.map((item, index) => (

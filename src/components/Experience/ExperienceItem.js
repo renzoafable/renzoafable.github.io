@@ -22,8 +22,8 @@ const ExperienceItem = (props) => {
       </div>
       <hr />
       <ul className={classes.Details}>
-        {props.description.map((item) => (
-          <li>{item}</li>
+        {props.description.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
         <li className={classes.Stack}>
           <em>Tech stack</em>: {props.stack.join(', ')}

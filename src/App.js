@@ -4,6 +4,7 @@ import Header from './components/Navigation/Header/Header';
 import About from './sections/About/About';
 import Experience from './sections/Experience/Experience';
 import Projects from './sections/Projects/Projects';
+import Footer from './components/Navigation/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Experience />
         <Projects />
       </>
+      <Footer />
     </>
   );
 }

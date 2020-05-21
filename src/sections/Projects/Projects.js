@@ -62,8 +62,8 @@ const Projects = () => {
     <Section heading='Projects' id='projects' dimmed>
       <Container>
         <Row>
-          {projects.map((project) => (
-            <ProjectItem {...project} />
+          {projects.map((project, index) => (
+            <ProjectItem key={index} {...project} />
           ))}
         </Row>
       </Container>
