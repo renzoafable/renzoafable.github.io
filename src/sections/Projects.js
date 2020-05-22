@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-import classes from './Projects.module.css';
-import Section from '../../components/UI/Section/Section';
-import ProjectItem from '../../components/Projects/ProjectItem';
+import Section from '../components/UI/Section/Section';
+import ProjectItem from '../components/Projects/ProjectItem';
 
 const Projects = () => {
   const [projects] = useState([

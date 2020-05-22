@@ -6,11 +6,10 @@ import IosTimerOutline from 'react-ionicons/lib/IosTimerOutline';
 import IosPerson from 'react-ionicons/lib/IosPerson';
 import IosJet from 'react-ionicons/lib/IosJet';
 
-import classes from './About.module.css';
-import Section from '../../components/UI/Section/Section';
-import Principle from '../../components/About/Principle/Principle';
-import Author from '../../components/About/Author/Author';
-import Tech from '../../components/About/Tech/Tech';
+import Section from '../components/UI/Section/Section';
+import Principle from '../components/About/Principle/Principle';
+import Author from '../components/About/Author/Author';
+import Tech from '../components/About/Tech/Tech';
 
 const iconStyle = {
   color: '#0493b0',

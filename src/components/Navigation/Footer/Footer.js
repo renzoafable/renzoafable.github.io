@@ -36,11 +36,15 @@ const Footer = () => {
             ))}
           </div>
           <div className={classes.Addresses}>
-            <p className='text-center mb-0'>Email: renzoafable@gmail.com</p>
-            <p className='text-center mb-0'>Mobile: +(63) 917 877 4953</p>
+            <p className='text-center text-muted mb-0'>
+              Email: renzoafable@gmail.com
+            </p>
+            <p className='text-center text-muted mb-0'>
+              Mobile: +(63) 917 877 4953
+            </p>
           </div>
         </div>
-        <p className='text-center text-uppercase mt-3 mb-0'>
+        <p className='text-center text-muted text-uppercase mt-2 mt-sm-4 mb-0'>
           Renzo Afable &copy; <span className={classes.Date}>2020</span>
         </p>
       </Container>

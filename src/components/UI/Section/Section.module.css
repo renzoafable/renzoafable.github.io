@@ -20,3 +20,41 @@
   margin: 20px auto 75px auto;
   width: 100px;
 }
+
+/* Small devices */
+@media (max-width: 575px) {
+  .Section {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .Heading:after {
+    margin-bottom: 30px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .Section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .Heading:after {
+    margin-bottom: 40px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Section {
+    padding-top: 90px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Section {
+    padding-top: 100px;
+  }
+}

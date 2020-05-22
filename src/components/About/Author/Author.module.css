@@ -23,3 +23,39 @@
   text-align: justify;
   width: 95%;
 }
+
+/* Small devices */
+@media (max-width: 575px) {
+  .Author figure {
+    margin-bottom: 2rem;
+  }
+
+  .Author figure img {
+    margin-bottom: 10px;
+    max-width: 150px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .Author figure {
+    margin-bottom: 3rem;
+  }
+
+  .Author figure img {
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+
+  .Author figure figcaption p {
+    width: 90%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}

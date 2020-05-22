@@ -9,7 +9,12 @@ import Logo from '../../../../assets/logo-white.png';
 
 const Navigation = () => {
   return (
-    <Navbar expand='lg' bg='dark' sticky='top' className={classes.Navbar}>
+    <Navbar
+      collapseOnSelect={true}
+      expand='lg'
+      bg='dark'
+      sticky='top'
+      className={classes.Navbar}>
       <Container>
         <Navbar.Brand href='#'>
           <img src={Logo} alt='Logo' className={classes.Logo} />
@@ -38,7 +43,7 @@ const Navigation = () => {
             <Nav.Item className={classes.ResumeContainer}>
               <Nav.Link
                 className={classes.ResumeLink}
-                href='https://drive.google.com/open?id=1WZ6lKbF-i-nskIAJvke_WAXpmQjQMLPT'
+                href='https://drive.google.com/open?id=1n42h8WQX9ym_NTMP-U_3qBfneH6v6snE'
                 target='_blank'>
                 Resume
               </Nav.Link>

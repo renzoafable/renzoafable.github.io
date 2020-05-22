@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 
-import Section from '../../components/UI/Section/Section';
-import ExperienceItem from '../../components/Experience/ExperienceItem';
+import Section from '../components/UI/Section/Section';
+import ExperienceItem from '../components/Experience/ExperienceItem';
 
 const Experience = () => {
   const [experiences] = useState([
