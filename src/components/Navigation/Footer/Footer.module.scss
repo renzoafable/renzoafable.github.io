@@ -1,0 +1,48 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/placeholders';
+@import '../../../assets/styles/variables';
+
+.contact {
+  @extend %align-center;
+
+  @include respond-to('x-small') {
+    flex-direction: column;
+  }
+
+  justify-content: space-between;
+
+  &__links,
+  &__link_container,
+  &__addresses {
+    @include flex-center;
+  }
+
+  &__links,
+  &__addresses {
+    @include respond-to('x-small') {
+      margin: 0.5rem 0;
+    }
+  }
+
+  &__addresses {
+    flex-direction: column;
+  }
+
+  &__link_container {
+    background-color: #434b53;
+    cursor: pointer;
+    margin: 0 5px;
+    height: 4rem;
+    width: 4rem;
+    transition: all 500ms;
+
+    &:hover {
+      background-color: $primary;
+      border: 2px solid $secondary;
+    }
+  }
+}
+
+.date {
+  color: $accent;
+}

@@ -4,7 +4,7 @@ import LogoGithub from 'react-ionicons/lib/LogoGithub';
 import LogoLinkedIn from 'react-ionicons/lib/LogoLinkedin';
 import LogoInstagram from 'react-ionicons/lib/LogoInstagram';
 
-import classes from './Footer.module.css';
+import classes from './Footer.module.scss';
 
 const Footer = () => {
   const [links] = useState([
@@ -25,17 +25,17 @@ const Footer = () => {
   return (
     <footer className='bg-dark p-4'>
       <Container>
-        <div className={classes.Contact}>
-          <div className={classes.Links}>
+        <div className={classes.contact}>
+          <div className={classes.contact__links}>
             {links.map((link, index) => (
-              <div key={index} className={classes.LinkContainer}>
+              <div key={index} className={classes.contact__link_container}>
                 <a href={link.link} target='_blank' rel='noopener noreferrer'>
                   {link.icon}
                 </a>
               </div>
             ))}
           </div>
-          <div className={classes.Addresses}>
+          <div className={classes.contact__addresses}>
             <p className='text-center text-muted mb-0'>
               Email: renzoafable@gmail.com
             </p>
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <p className='text-center text-muted text-uppercase mt-2 mt-sm-4 mb-0'>
-          Renzo Afable &copy; <span className={classes.Date}>2020</span>
+          Renzo Afable &copy; <span className={classes.date}>2020</span>
         </p>
       </Container>
     </footer>
