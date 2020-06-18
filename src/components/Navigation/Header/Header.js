@@ -1,17 +1,17 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
-import classes from './Header.module.css';
+import classes from './Header.module.scss';
 
 const Header = () => {
   return (
-    <header className={classes.Header}>
+    <header className={classes.header}>
       <Container>
-        <div className={classes.HeaderTextBox}>
+        <div className={classes.header__text_box}>
           <h1>
-            Hello, I'm <span className={classes.Name}>Renzo Afable</span>.
+            Hello, I'm <span className={classes.name}>Renzo Afable</span>.
             <br />
-            <span className={classes.Occupation}>
+            <span className={classes.occupation}>
               I'm a full-stack software engineer.
             </span>
           </h1>

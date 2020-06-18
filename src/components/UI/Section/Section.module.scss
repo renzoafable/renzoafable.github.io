@@ -1,0 +1,51 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.section {
+  padding-top: 110px;
+  padding-bottom: 60px;
+
+  @include respond-to('x-small') {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  @include respond-to('small') {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  @include respond-to('medium') {
+    padding-top: 90px;
+  }
+
+  @include respond-to('large') {
+    padding-top: 100px;
+  }
+
+  &__heading {
+    color: #5e5e5e;
+    font-size: 230%;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 4px;
+
+    &::after {
+      background-color: $accent;
+      content: '';
+      display: block;
+      height: 5px;
+      margin: 20px auto 75px auto;
+      width: 100px;
+
+      @include respond-to('x-small') {
+        margin-bottom: 30px;
+      }
+
+      @include respond-to('small') {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

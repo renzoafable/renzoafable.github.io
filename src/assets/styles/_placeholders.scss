@@ -1,7 +1,9 @@
-.Tech {
+%align-center {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+%justify-center {
+  display: flex;
   justify-content: center;
-  height: 100%;
 }

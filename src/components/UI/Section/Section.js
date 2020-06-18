@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
-import classes from './Section.module.css';
+import classes from './Section.module.scss';
 
 const Section = (props) => {
   const style = {
@@ -9,8 +9,8 @@ const Section = (props) => {
   };
 
   return (
-    <section id={props.id} className={classes.Section} style={style}>
-      <h2 className={classes.Heading}>{props.heading}</h2>
+    <section id={props.id} className={classes.section} style={style}>
+      <h2 className={classes.section__heading}>{props.heading}</h2>
       <Container>{props.children}</Container>
     </section>
   );

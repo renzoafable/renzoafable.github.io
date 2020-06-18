@@ -1,0 +1,52 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/placeholders';
+
+.experience {
+  &__header {
+    @extend %align-center;
+
+    justify-content: space-between;
+
+    @include respond-to('x-small') {
+      flex-direction: column;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    p {
+      text-align: right;
+      margin-bottom: 0;
+
+      &:first-child {
+        font-weight: 700;
+      }
+
+      &:last-child {
+        font-size: 0.7rem;
+        font-style: italic;
+      }
+
+      @include respond-to('x-small') {
+        text-align: center;
+      }
+    }
+
+    hr {
+      margin-top: 2px;
+    }
+  }
+
+  &__details {
+    padding: 0 1rem;
+
+    li {
+      text-align: justify;
+
+      em {
+        font-weight: 700;
+      }
+    }
+  }
+}

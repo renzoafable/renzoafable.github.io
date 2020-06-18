@@ -5,7 +5,7 @@ import MdFolderOpen from 'react-ionicons/lib/MdFolderOpen';
 import LogoGithub from 'react-ionicons/lib/LogoGithub';
 import MdOpen from 'react-ionicons/lib/MdOpen';
 
-import classes from './ProjectItem.module.css';
+import classes from './ProjectItem.module.scss';
 import withHref from './withHref/withHref';
 
 const ProjectItem = (props) => {
@@ -21,7 +21,7 @@ const ProjectItem = (props) => {
 
   return (
     <Col xs={12} sm={6} lg={4} className='mb-4'>
-      <Card className={classes.Item}>
+      <Card className={classes.project}>
         <Card.Body className='d-flex flex-column'>
           <Card.Title>
             <div className='d-flex justify-content-between align-items-center pb-2'>
@@ -34,7 +34,7 @@ const ProjectItem = (props) => {
                 </div>
               ) : null}
             </div>
-            <h3 className={classes.Title}>{props.name}</h3>
+            <h3 className={classes.project__title}>{props.name}</h3>
           </Card.Title>
           <Card.Text>{props.description}</Card.Text>
 

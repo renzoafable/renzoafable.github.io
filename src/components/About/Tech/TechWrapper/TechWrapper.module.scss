@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+@import '../../../../assets/styles/placeholders';
+
+.tech_wrapper {
+  background-color: $secondary;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+  width: 100%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__label {
+    @include flex-center;
+
+    background-color: $primary;
+    color: $white;
+    text-align: center;
+    text-transform: capitalize;
+    width: 35%;
+  }
+
+  &__content {
+    @extend %justify-center;
+
+    flex-wrap: wrap;
+    width: 65%;
+
+    span {
+      color: $white;
+      display: inline-block;
+      padding: 5px 8px;
+    }
+  }
+}

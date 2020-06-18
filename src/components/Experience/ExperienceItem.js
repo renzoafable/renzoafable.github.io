@@ -1,11 +1,12 @@
 import React from 'react';
 
-import classes from './ExperienceItem.module.css';
+import classes from './ExperienceItem.module.scss';
 
 const ExperienceItem = (props) => {
   return (
-    <div className='px-4 py-3 mb-3 border rounded shadow-sm'>
-      <div className={classes.Header}>
+    <div
+      className={`px-4 py-3 mb-3 border rounded shadow-sm ${classes.experience}`}>
+      <div className={classes.experience__header}>
         <a
           className='text-uppercase link'
           href={props.companyUrl}
@@ -21,11 +22,11 @@ const ExperienceItem = (props) => {
         </div>
       </div>
       <hr />
-      <ul className={classes.Details}>
+      <ul className={classes.experience__details}>
         {props.description.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
-        <li className={classes.Stack}>
+        <li>
           <em>Tech stack</em>: {props.stack.join(', ')}
         </li>
       </ul>
