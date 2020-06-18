@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Raleway:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $white;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.link:link,
+.link:visited {
+  color: $secondary;
+  font-weight: 700;
+  text-decoration: none;
+
+  .link--external:link,
+  .link--external:visited {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+  }
+
+  .link--external:hover,
+  .link--external:active {
+    border-bottom: 2px solid $secondary;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../../assets/styles/placeholders';
+
+.tech {
+  @extend %align-center;
+
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}

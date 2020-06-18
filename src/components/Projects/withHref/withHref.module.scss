@@ -1,0 +1,8 @@
+.link {
+  margin: 0.2rem;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}

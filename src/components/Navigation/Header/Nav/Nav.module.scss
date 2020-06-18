@@ -1,3 +1,79 @@
+@import '../../../../assets/styles/mixins';
+@import '../../../../assets/styles/variables';
+
+@mixin nav-link {
+  color: $white !important;
+  display: inline-block;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+@mixin container {
+  display: inline-block;
+  margin: 4px 15px;
+}
+
+.navbar {
+  border-bottom: 4px solid $primary;
+
+  &__logo {
+    height: 25px;
+    width: auto;
+
+    @include respond-to('small') {
+      height: 30px;
+    }
+
+    @include respond-to('large') {
+      height: 35px;
+    }
+  }
+
+  &__toggle {
+    border: none;
+  }
+
+  &__link_container {
+    @include container;
+
+    .navbar__link {
+      @include nav-link;
+
+      &:link,
+      &:visited {
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.6s;
+      }
+      &:hover {
+        border-bottom: 2px solid $accent;
+      }
+    }
+  }
+
+  &__resume_container {
+    @include container;
+
+    .resume__link {
+      @include nav-link;
+
+      &:link,
+      &:visited {
+        border: 2px solid $primary;
+        background-color: $primary;
+        transition: all 0.4s;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $secondary;
+      }
+    }
+  }
+}
+
 .Navbar {
   border-bottom: 4px solid var(--main-blue-color);
 }

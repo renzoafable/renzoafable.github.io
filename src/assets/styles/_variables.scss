@@ -1,0 +1,23 @@
+$primary: #0493b0;
+$secondary: #0a7286;
+$accent: #e31b6d;
+$white: #ffffff;
+$font-dark: #5e5e5e;
+
+$breakpoints: (
+  'x-small': (
+    max-width: 575px,
+  ),
+  'small': (
+    min-width: 576px,
+  ),
+  'medium': (
+    min-width: 768px,
+  ),
+  'large': (
+    min-width: 992px,
+  ),
+  'x-large': (
+    min-width: 1200px,
+  ),
+);

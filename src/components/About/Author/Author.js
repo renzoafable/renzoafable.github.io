@@ -1,14 +1,19 @@
 import React from 'react';
 
-import classes from './Author.module.css';
-import AuthorImage from '../../../assets/author-image.jpg';
+import classes from './Author.module.scss';
+import AuthorImage from '../../../assets/images/author-image.jpg';
 
 const Author = (props) => {
   return (
-    <div className={classes.Author}>
-      <figure className={classes.AuthorImage}>
-        <img src={AuthorImage} alt='Author' className='figure-img img-fluid' />
-        <figcaption className='figure-caption text-center'>
+    <div className={classes.author}>
+      <figure className={classes.author__figure}>
+        <img
+          src={AuthorImage}
+          alt='Author'
+          className={`figure-img img-fluid ${classes.author__figure__img}`}
+        />
+        <figcaption
+          className={`figure-caption text-center ${classes.author__figure__caption}`}>
           <h3>Who am I?</h3>
           <p>
             Hi! I am a {props.occupation} for{' '}

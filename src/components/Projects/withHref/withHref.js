@@ -1,13 +1,13 @@
 import React from 'react';
 
-import classes from './withHref.module.css';
+import classes from './withHref.module.scss';
 
 const withHref = (WrappedIcon, href) => {
   return (
     <a
       href={href}
       target='_blank'
-      className={classes.Link}
+      className={classes.link}
       rel='noopener noreferrer'>
       <WrappedIcon color='#5e5e5e' />
     </a>

@@ -1,0 +1,55 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(20, 20, 20, 0.9),
+      rgba(20, 20, 20, 0.9)
+    ),
+    url('../../../assets/images/header-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+
+  .header__text_box {
+    @include absolute-center;
+
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      color: $white;
+      font-size: 300%;
+      letter-spacing: 2px;
+      margin: 0;
+
+      @include respond-to('x-small') {
+        font-size: 2.2rem;
+      }
+
+      @include respond-to('small') {
+        font-size: 2.75rem;
+      }
+
+      @include respond-to('medium') {
+        font-size: 2.9rem;
+      }
+
+      .name {
+        color: $accent;
+        font-weight: 400;
+      }
+
+      .occupation {
+        font-size: 0.8em;
+
+        @include respond-to('x-small') {
+          font-size: 0.6em;
+        }
+      }
+    }
+  }
+}
